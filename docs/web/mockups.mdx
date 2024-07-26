@@ -2,22 +2,120 @@ import BrowserWindow from "../../src/components/BrowserWindow/index";
 
 # Maquetas
 
+## 1) Inicio de sesión
+
+En la pantalla de Login, los usuarios deben ingresar su correo electrónico y contraseña para acceder a su cuenta. También tienen la opción de iniciar sesión con Google, facilitando el proceso de autenticación.
+
+<BrowserWindow url="http://localhost:3000"> 
+
+<div style={{display: "flex", flexWrap: "wrap", justifyContent: "center", gap:"10px"}}>
+<img
+style={{border: "1px solid black", borderRadius: "20px"}}
+src={require('./img/login/login.png').default}
+alt="Login"
+width={1000}
+/>
+
+{/* <img
+style={{border: "1px solid black", borderRadius: "20px"}}
+
+src={require('./img/mocks/login/Registrar.jpg').default}
+alt="Registrar"
+width={300}
+/> */}
+
+</div>
+
+</BrowserWindow>
+
+
+## 2) Registrar
+
+Si un usuario no tiene cuenta, puede registrarse en la pantalla de Registrar. Aquí, deberá ingresar su nombre, correo electrónico, número de teléfono, nombre de usuario y cédula. También existe la opción de registrarse usando Google, simplificando el registro.
+
 <BrowserWindow url="http://localhost:3000">
+<div
+    style={{
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    gap: "10px",
+    }}
+>
+    <img
+    style={{ border: "1px solid black", borderRadius: "20px" }}
+    src={require("./img/registrar/registrar.png").default}
+    alt="Error"
+    width={1000}
+    />
+</div>
+</BrowserWindow>
 
-<h2>Hello from Docusaurus</h2>
 
-Are you ready to create the documentation site for your open source project?
+## 3) Home
+Una vez iniciada la sesión, el usuario es redirigido a la pantalla de Inicio. En esta pantalla, se muestra un banner con el nombre de la página web y algunos eslóganes, ofreciendo una cálida bienvenida y una visión general del sitio.
 
-<h3>Headers</h3>
+<BrowserWindow url="http://localhost:3000">
+<div
+    style={{
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    gap: "10px",
+    }}
+>
+    <img
+    style={{ border: "1px solid black", borderRadius: "20px" }}
+    src={require("./img/home/home.png").default}
+    alt="Principal"
+    width={1000}
+    /> 
+</div>
+</BrowserWindow>
 
-will show up on the table of contents on the upper right
+## 4) Colecciones
 
-So that your users will know what this page is all about without scrolling down or even without reading too much.
+En el apartado de Colecciones, los usuarios pueden explorar diferentes estilos de zapatos de varias marcas y precios. Esta sección permite a los usuarios navegar a través de las diversas colecciones disponibles, ayudándoles a encontrar el calzado que mejor se adapte a sus gustos y necesidades.
 
-<h3>Only h2 and h3 will be in the toc</h3>
 
-The headers are well-spaced so that the hierarchy is clear.
+<BrowserWindow url="http://localhost:3000">
+<div
+    style={{
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    gap: "10px",
+    }}
+>
+    <img
+    style={{ border: "1px solid black", borderRadius: "20px" }}
+    src={require("./img/colecciones/colecciones.png").default}
+    alt="Historial"
+    width={1000}
+    />
 
-- lists will help you - present the key points - that you want your users to remember - and you may nest them - multiple times
+</div>
+</BrowserWindow>
 
+## 5) Vista del producto:
+
+Si el usuario está interesado en un producto específico, puede hacer clic para ver más detalles de dicho producto. Una vez el usuario haya hecho click, podrá ver el nombre del producto, una descripción detallada, el precio, las diferentes tallas y colores disponibles, y se ofrece la opción de agregar el producto al carrito de compras para proceder con la compra.
+
+<BrowserWindow url="http://localhost:3000">
+<div
+    style={{
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    gap: "10px",
+    }}
+>
+    <img
+    style={{ border: "1px solid black", borderRadius: "20px" }}
+    src={require("./img/productos/productos.png").default}
+    alt="Historial"
+    width={1000}
+    />
+    
+</div>
 </BrowserWindow>
