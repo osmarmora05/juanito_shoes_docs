@@ -1,0 +1,229 @@
+---
+sidebar_position: 9
+---
+
+import BrowserWindow from "../src/components/BrowserWindow/index";
+
+import ReactPlayer from "react-player";
+
+# Prueba de caja negra
+
+## Móvil 📱
+
+### Carrito 🛒
+
+#### Pasos:
+
+**1.** Añadir productos al carrito:
+
+- Elige varios productos desde la tienda.
+- Observa el precio de cada uno y el total mostrado en el carrito.
+
+**2.** Verificar el total:
+
+- Compara el total que muestra la aplicación con la suma manual de los precios de los productos añadidos.
+
+#### Objetivo:
+
+Si el total mostrado por la aplicación coincide con tu cálculo manual, la prueba de caja negra sería exitosa. No necesitas saber cómo la aplicación calcula el total internamente, solo que lo hace correctamente desde la perspectiva del usuario.
+
+#### Procedimiento:
+
+**1.** Se 2 modelos de zapatos. Se puede observar los respectivos precios:
+
+<BrowserWindow url="http://localhost:3000">
+
+<div style={{display: "flex", flexWrap: "wrap", justifyContent: "center", gap:"10px"}}>
+<img
+style={{border: "1px solid black", borderRadius: "20px"}}
+  src={require('./img/cajaNegra/movil/cajaNegraMovil1.jpeg').default}
+  alt="Login"
+  width={300}
+/>
+
+<img
+style={{border: "1px solid black", borderRadius: "20px"}}
+
+src={require('./img/cajaNegra/movil/cajaNegraMovil2.jpeg').default}
+alt="Registrar"
+width={300}
+/>
+
+</div>
+
+</BrowserWindow>
+
+**2.** Si 5 unidades del primer modelo cuestan $500 y 4 unidades del segundo modelo cuestan $12916, su suma nos da $13416. Si deseamos calcular su IVA este nos da 2,012.40. Haciendo la suma del subtotal y el IVA nos da un total de **$15428.40**
+
+<BrowserWindow url="http://localhost:3000">
+
+<div
+  style={{
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    gap: "10px",
+  }}
+>
+  <img
+    style={{ border: "1px solid black", borderRadius: "20px" }}
+    src={require("./img/cajaNegra/movil/cajaNegraMovil3.jpeg").default}
+    alt='Login'
+    width={300}
+  />
+</div>
+
+</BrowserWindow>
+
+#### Conclusión:
+
+Podemos comprobar y concluir que esta prueba ha sido éxitosa, siendo que las sumas de los modelos de zapatos y sus cantidades da el total del carrito.
+
+## Web 💻
+
+### Carrito 🛒
+
+#### Pasos:
+
+**1.** Añadir productos al carrito:
+
+- Elige varios productos desde la tienda.
+- Observa el precio de cada uno y el total mostrado en el carrito.
+
+**2.** Verificar el total:
+
+- Compara el total que muestra la aplicación con la suma manual de los precios de los productos añadidos.
+
+#### Objetivo:
+
+Si el total mostrado por la aplicación coincide con tu cálculo manual, la prueba de caja negra sería exitosa. No necesitas saber cómo la aplicación calcula el total internamente, solo que lo hace correctamente desde la perspectiva del usuario.
+
+#### Procedimiento:
+
+**1.** Se va a agregar 1 zapato de cada modelo. Se puede observar los respectivos precios:
+
+<BrowserWindow url="http://localhost:3000">
+
+<div style={{display: "flex", flexWrap: "wrap", justifyContent: "center", gap:"10px"}}>
+<img
+style={{border: "1px solid black", borderRadius: "20px"}}
+src={require('./img/cajaNegra/web/cajaNegraWeb1.jpeg').default}
+alt="Login"
+width={1000}
+/>
+</div>
+</BrowserWindow>
+
+<BrowserWindow url="http://localhost:3000">
+
+<div style={{display: "flex", flexWrap: "wrap", justifyContent: "center", gap:"10px"}}>
+<img
+style={{border: "1px solid black", borderRadius: "20px"}}
+src={require('./img/cajaNegra/web/cajaNegraWeb2.jpeg').default}
+alt="Login"
+width={1000}
+/>
+</div>
+</BrowserWindow>
+
+<BrowserWindow url="http://localhost:3000">
+
+<div style={{display: "flex", flexWrap: "wrap", justifyContent: "center", gap:"10px"}}>
+<img
+style={{border: "1px solid black", borderRadius: "20px"}}
+src={require('./img/cajaNegra/web/cajaNegraWeb3.jpeg').default}
+alt="Login"
+width={1000}
+/>
+</div>  
+</BrowserWindow>
+
+<BrowserWindow url="http://localhost:3000">
+
+<div style={{display: "flex", flexWrap: "wrap", justifyContent: "center", gap:"10px"}}>
+<img
+style={{border: "1px solid black", borderRadius: "20px"}}
+src={require('./img/cajaNegra/web/cajaNegraWeb4.jpeg').default}
+alt="Login"
+width={1000}
+/>
+</div>
+</BrowserWindow>
+
+**2.** Los precios de los modelos varian, uno cuesta C$ 3229, el otro C$80 y el ultimo C$ 100, la suma total de eso seria:
+
+<div
+  style={{
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    gap: "10px",
+    border: "1px solid #000",
+    borderRadius: "20px",
+  }}
+>
+  <img
+    style={{ border: "1px solid black", borderRadius: "20px" }}
+    src={require("./img/cajaNegra/web/cajaNegraWeb5.jpeg").default}
+    alt='Login'
+    width={1000}
+  />
+</div>
+
+**3.** El aumento del iva seria:
+
+<div
+  style={{
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    gap: "10px",
+    border: "1px solid #000",
+    borderRadius: "20px",
+  }}
+>
+  <img
+    style={{ border: "1px solid black", borderRadius: "20px" }}
+    src={require("./img/cajaNegra/web/cajaNegraWeb6.jpeg").default}
+    alt='Login'
+    width={1000}
+  />
+</div>
+
+**4.** Entonces a los C$ 3409 se le sumarian C$ 511.35 del iva, y quedaria:
+
+<div
+  style={{
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    gap: "10px",
+    border: "1px solid #000",
+    borderRadius: "20px",
+  }}
+>
+  <img
+    style={{ border: "1px solid black", borderRadius: "20px" }}
+    src={require("./img/cajaNegra/web/cajaNegraWeb7.jpeg").default}
+    alt='Login'
+    width={1000}
+  />
+</div>
+
+**5.** Acá se podrian visualizar los zapatos anteriormente agregados al carrito, con su precio unitario, y tambien el valor del subtotal y el total:
+
+<BrowserWindow url="http://localhost:3000">
+
+<div style={{display: "flex", flexWrap: "wrap", justifyContent: "center", gap:"10px"}}>
+<img
+style={{border: "1px solid black", borderRadius: "20px"}}
+src={require('./img/cajaNegra/web/cajaNegraWeb8.jpeg').default}
+alt="Login"
+width={1000}
+/>
+</div>
+</BrowserWindow>
+
+#### Conclusión:
+
+Podemos comprobar y concluir que esta prueba ha sido éxitosa, habiendo comprobado que la suma manual de precios de los zapatos agregados al carrito coincide con la suma automática del carrito.
