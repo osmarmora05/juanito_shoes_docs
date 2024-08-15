@@ -90,10 +90,9 @@ En el apartado de Colecciones, los usuarios pueden explorar diferentes estilos d
     <img
     style={{ border: "1px solid black", borderRadius: "20px" }}
     src={require("./img/colecciones/colecciones.png").default}
-    alt="Historial"
+    alt="colecciones"
     width={1000}
     />
-
 </div>
 </BrowserWindow>
 
@@ -113,9 +112,85 @@ Si el usuario está interesado en un producto específico, puede hacer clic para
     <img
     style={{ border: "1px solid black", borderRadius: "20px" }}
     src={require("./img/productos/productos.png").default}
+    alt="Productos"
+    width={1000}
+    />
+    
+</div>
+</BrowserWindow>
+
+## 6) Carrito:
+
+Dentro del carrito el cliente podrá observar los productos que ha ido agregando, pudiendo ver el subtotal y el total de la compra. También tienen la posibilidad de eliminar los productos agregados.
+
+<BrowserWindow url="http://localhost:3000">
+<div
+    style={{
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    gap: "10px",
+    }}
+>
+    <img
+    style={{ border: "1px solid black", borderRadius: "20px" }}
+    src={require("./img/carrito/carrito.png").default}
+    alt="Carrito"
+    width={1000}
+    />
+    
+</div>
+</BrowserWindow>
+
+## 7) Pedido exitoso:
+
+Esta es la pantalla que visualizará el usuario en el caso de que el pedido haya sido realizado con éxito.
+
+<BrowserWindow url="http://localhost:3000">
+<div
+    style={{
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    gap: "10px",
+    }}
+>
+    <img
+    style={{ border: "1px solid black", borderRadius: "20px" }}
+    src={require("./img/pedidoExitoso/pedidoExitoso.png").default}
+    alt="PedidoExitoso"
+    width={1000}
+    />
+    
+</div>
+</BrowserWindow>
+
+## 8) Historial:
+
+En el historial el usuario puede visualizar los pedidos realizados anteriormente junto con su fecha. Dentro de cada pedido podrá ver todos los detalles sobre el pedido que seleccione
+<BrowserWindow url="http://localhost:3000">
+<div
+    style={{
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    gap: "10px",
+    }}
+>
+    <img
+    style={{ border: "1px solid black", borderRadius: "20px" }}
+    src={require("./img/historial/historial.png").default}
+    alt="Historial"
+    width={1000}
+    />
+
+    <img
+    style={{ border: "1px solid black", borderRadius: "20px" }}
+    src={require("./img/historial/detalles.png").default}
     alt="Historial"
     width={1000}
     />
     
 </div>
 </BrowserWindow>
+
